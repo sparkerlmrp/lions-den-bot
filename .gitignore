@@ -1,0 +1,6 @@
+node_modules/
+.env
+bot.sqlite
+bot.sqlite-journal
+bot.sqlite-wal
+bot.sqlite-shm
