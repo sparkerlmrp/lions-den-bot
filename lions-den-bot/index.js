@@ -1,7 +1,16 @@
 require('dotenv').config();
 const fs = require('fs');
 const path = require('path');
+const http = require('http');
 const { Client, GatewayIntentBits, Partials, Collection } = require('discord.js');
+
+// Minimal HTTP server so free hosts (like Render) see an open port and
+// know the service is alive. Not used by Discord itself.
+const PORT = process.env.PORT || 3000;
+http.createServer((req, res) => {
+  res.writeHead(200, { 'Content-Type': 'text/plain' });
+  res.end("Lion's Den bot is online.");
+}).listen(PORT, () => console.log(`Health check server listening on port ${PORT}`));
 
 const client = new Client({
   intents: [
