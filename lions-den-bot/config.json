@@ -1,0 +1,28 @@
+{
+  "colors": {
+    "primary": "#C9A227",
+    "success": "#57F287",
+    "error": "#ED4245",
+    "warning": "#FEE75C"
+  },
+  "leveling": {
+    "xpPerMessage": 15,
+    "xpCooldownSeconds": 60,
+    "levelUpMessage": true
+  },
+  "moderation": {
+    "maxWarningsBeforeAction": 3,
+    "autoModBannedWords": ["examplebadword1", "examplebadword2"],
+    "autoModMaxMentions": 5
+  },
+  "welcome": {
+    "enabled": true,
+    "channelName": "welcome",
+    "message": "🦁 Welcome to Lion's Den, {user}! You're member #{memberCount}. Head to the rules channel to get started.",
+    "autoRoleName": ""
+  },
+  "tickets": {
+    "categoryName": "Tickets",
+    "supportRoleName": "Support"
+  }
+}
